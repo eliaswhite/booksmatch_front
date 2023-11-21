@@ -11,6 +11,7 @@ export const useBookStore = defineStore('book', {
         async getBooks() {
             const data = await bookService.getBooks();
             this.books = data;
+            console.log(this.books)
         }
     }
 })
